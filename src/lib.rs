@@ -156,8 +156,8 @@ pub fn start() -> Result<(), JsValue> {
     
     let document = web_sys::window().unwrap().document().unwrap();
 
-    let mut storage = web_sys::window().expect("no window").local_storage().expect("can't get storage").expect("no storage");
-    storage.set_item("test", "test").expect("can't use storage");
+    //let mut storage = web_sys::window().expect("no window").local_storage().expect("can't get storage").expect("no storage");
+    //storage.set_item("test", "test").expect("can't use storage");
 
     let style_element = Rc::new(document
         .create_element("style").unwrap()

@@ -301,24 +301,9 @@ function init(module) {
             handleError(e)
         }
     };
-    imports.wbg.__widl_f_set_item_Storage = function(arg0, arg1, arg2, arg3, arg4) {
-        try {
-            getObject(arg0).setItem(getStringFromWasm(arg1, arg2), getStringFromWasm(arg3, arg4));
-        } catch (e) {
-            handleError(e)
-        }
-    };
     imports.wbg.__widl_f_document_Window = function(arg0) {
         const ret = getObject(arg0).document;
         return isLikeNone(ret) ? 0 : addHeapObject(ret);
-    };
-    imports.wbg.__widl_f_local_storage_Window = function(arg0) {
-        try {
-            const ret = getObject(arg0).localStorage;
-            return isLikeNone(ret) ? 0 : addHeapObject(ret);
-        } catch (e) {
-            handleError(e)
-        }
     };
     imports.wbg.__widl_f_set_timeout_with_callback_and_timeout_and_arguments_0_Window = function(arg0, arg1, arg2) {
         try {
@@ -398,7 +383,7 @@ function init(module) {
     imports.wbg.__wbindgen_throw = function(arg0, arg1) {
         throw new Error(getStringFromWasm(arg0, arg1));
     };
-    imports.wbg.__wbindgen_closure_wrapper69 = function(arg0, arg1, arg2) {
+    imports.wbg.__wbindgen_closure_wrapper67 = function(arg0, arg1, arg2) {
         const state = { a: arg0, b: arg1, cnt: 1 };
         const real = (arg0) => {
             state.cnt++;
@@ -416,7 +401,7 @@ function init(module) {
         const ret = real;
         return addHeapObject(ret);
     };
-    imports.wbg.__wbindgen_closure_wrapper71 = function(arg0, arg1, arg2) {
+    imports.wbg.__wbindgen_closure_wrapper69 = function(arg0, arg1, arg2) {
         const state = { a: arg0, b: arg1, cnt: 1 };
         const real = () => {
             state.cnt++;
