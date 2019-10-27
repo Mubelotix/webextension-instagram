@@ -1,0 +1,21 @@
+{
+
+  "manifest_version": 2,
+  "name": "Instagram bot",
+  "version": "1.1",
+
+  "description": "Automate your instagram account to increase your visibility!",
+
+  "icons": {
+    "48": "icons/logo-48.jpeg"
+  },
+
+  "permissions": ["unlimitedStorage"],
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.instagram.com/*"],
+      "js": ["launcher.js"]
+    }
+  ]
+}

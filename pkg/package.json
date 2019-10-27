@@ -1,0 +1,15 @@
+{
+  "name": "wasm-instagram-bot",
+  "collaborators": [
+    "Mubelotix <unbeliever.in.time@gmail.com>"
+  ],
+  "version": "0.1.0",
+  "files": [
+    "wasm_instagram_bot_bg.wasm",
+    "wasm_instagram_bot.js",
+    "wasm_instagram_bot.d.ts"
+  ],
+  "module": "wasm_instagram_bot.js",
+  "types": "wasm_instagram_bot.d.ts",
+  "sideEffects": "false"
+}
